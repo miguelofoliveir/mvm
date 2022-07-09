@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "95cc5ede-1eec-4b89-8d9b-eb260b77b4c0"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -20,14 +23,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mvm",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/logo.png",
               "src/assets"
             ],
             "styles": [
@@ -95,7 +98,7 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/logo.png",
               "src/assets"
             ],
             "styles": [
